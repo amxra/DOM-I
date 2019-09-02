@@ -44,11 +44,20 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Nav section 
 
-let navSection = document.querySelectorAll('nav a')
+let navSection = document.querySelectorAll('nav a');
 
 for (i =0; i < navSection.length; i++){
   navSection[i].innerHTML = siteContent['nav']['nav-item-' + (i + 1)]
 }
+
+// change nav color 
+
+for (let i = 0; i < navSection.length;i++){
+  navSection[i].classList.add("greenNav");
+  const greenNav = document.querySelectorAll('.greenNav')[i];
+  greenNav.style.color = "green";
+}
+
 
 // CTA 
 
@@ -111,3 +120,4 @@ contactBody[2].textContent = siteContent['contact']['email'];
 let footerText = document.querySelector('footer');
 
 footerText.textContent = siteContent['footer']['copyright']
+
