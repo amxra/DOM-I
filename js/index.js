@@ -108,3 +108,6 @@ contactBody[0].textContent = siteContent['contact']['address'];
 contactBody[1].textContent = siteContent['contact']['phone'];
 contactBody[2].textContent = siteContent['contact']['email'];
 
+let footerText = document.querySelector('footer');
+
+footerText.textContent = siteContent['footer']['copyright']
