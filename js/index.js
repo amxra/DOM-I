@@ -49,3 +49,27 @@ let navSection = document.querySelectorAll('nav a')
 for (i =0; i < navSection.length; i++){
   navSection[i].innerHTML = siteContent['nav']['nav-item-' + (i + 1)]
 }
+
+// CTA 
+
+let bannerText = document.querySelector('.cta-text h1');
+
+siteContent.cta.h1 = "Dom <br> Is <br> Awesome";
+
+bannerText.innerHTML = siteContent.cta.h1;
+
+let bannerButton = document.querySelector('.cta-text button');
+
+bannerButton.innerHTML = siteContent.cta.button;
+
+
+let bannerImage = document.querySelector('#cta-img');
+
+bannerImage.setAttribute('src', siteContent['cta']['img-src']);
+
+
+
+
+
+
+
