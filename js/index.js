@@ -96,4 +96,15 @@ let bottomContentText = document.querySelectorAll('.bottom-content .text-content
 
 bottomContentText[0].textContent = siteContent['main-content']['services-content'];
 bottomContentText[1].textContent = siteContent['main-content']['product-content'];
-bottomContentText[2].textContent = siteContent['main-content']['vision-content']
+bottomContentText[2].textContent = siteContent['main-content']['vision-content'];
+
+let contactHeader = document.querySelector('.contact h4');
+
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+let contactBody = document.querySelectorAll('.contact p');
+
+contactBody[0].textContent = siteContent['contact']['address'];
+contactBody[1].textContent = siteContent['contact']['phone'];
+contactBody[2].textContent = siteContent['contact']['email'];
+
