@@ -58,10 +58,31 @@ for (let i = 0; i < navSection.length;i++){
   greenNav.style.color = "green";
 }
 
+//New nav child
+
+let navSelector = document.querySelector('nav');
+let shopNav = document.createElement('a');
+
+shopNav.href = '#'
+shopNav.textContent = 'Shop'
+navSelector.appendChild(shopNav)
+
+let registerNav = document.createElement('a');
+registerNav.href = '#'
+registerNav.textContent = 'Register'
+
+navSelector.append(registerNav);
+
+navSelector.prepend(shopNav, registerNav)
+
 
 // CTA 
 
 let bannerText = document.querySelector('.cta-text h1');
+
+//stretch 
+
+bannerText.style.color = 'red';
 
 siteContent.cta.h1 = "Dom <br> Is <br> Awesome";
 
@@ -70,6 +91,11 @@ bannerText.innerHTML = siteContent.cta.h1;
 let bannerButton = document.querySelector('.cta-text button');
 
 bannerButton.innerHTML = siteContent.cta.button;
+
+//stretch
+
+bannerButton.style.backgroundColor = 'black';
+bannerButton.style.color ='white';
 
 
 let bannerImage = document.querySelector('#cta-img');
