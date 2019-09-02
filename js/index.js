@@ -69,7 +69,31 @@ bannerImage.setAttribute('src', siteContent['cta']['img-src']);
 
 
 
+//Middle Area
+
+let topContentHeader = document.querySelectorAll('.main-content .top-content h4');
+
+topContentHeader[0].textContent= siteContent['main-content']["features-h4"];
+topContentHeader[1].textContent= siteContent['main-content']["about-h4"]
 
 
+let topContentParagraph = document.querySelectorAll('.main-content .top-content p');
 
+topContentParagraph[0].textContent = siteContent['main-content']['features-content'];
+topContentParagraph[1].textContent = siteContent['main-content']['about-content']
 
+let middleImage = document.querySelector('#middle-img');
+
+middleImage.setAttribute('src', siteContent['main-content']["middle-img-src"]);
+
+let bottomContentHeader = document.querySelectorAll('.bottom-content .text-content h4');
+
+bottomContentHeader[0].textContent = siteContent['main-content']['services-h4'];
+bottomContentHeader[1].textContent = siteContent['main-content']['product-h4'];
+bottomContentHeader[2].textContent = siteContent['main-content']['vision-h4'];
+
+let bottomContentText = document.querySelectorAll('.bottom-content .text-content p');
+
+bottomContentText[0].textContent = siteContent['main-content']['services-content'];
+bottomContentText[1].textContent = siteContent['main-content']['product-content'];
+bottomContentText[2].textContent = siteContent['main-content']['vision-content']
